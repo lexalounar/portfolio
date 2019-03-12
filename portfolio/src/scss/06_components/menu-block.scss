@@ -1,0 +1,44 @@
+.c-menu-block {
+  border-bottom: $border-width-thick solid $color-black;
+  position: relative;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  p {
+    color: $color-accent;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: $spacing-small;
+  }
+
+  li {
+    font-size: $font-size-text-large;
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-x-small;
+  }
+
+  @media #{$medium-up} {
+    display: none;
+  }
+}
+
+.c-menu-block__top {
+  position: absolute;
+  right: $spacing-small;
+  top: 0;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $color-accent;
+  }
+
+  svg {
+    margin-right: $spacing-x-small;
+  }
+}

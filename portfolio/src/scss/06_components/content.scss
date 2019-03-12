@@ -1,0 +1,20 @@
+.c-content {
+  margin: $spacing-small;
+  padding-left: 0;
+
+  li {
+    @include pawprint;
+    background-position: 0 5px;
+    color: $color-brand;
+    margin-bottom: $spacing-x-small;
+    padding-left: $spacing-x-large;
+
+    @media #{$medium-up} {
+      background-position: 0 7px;
+    }
+  }
+
+  ul {
+    @include no-bullet;
+  }
+}

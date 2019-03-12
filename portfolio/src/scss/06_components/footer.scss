@@ -1,0 +1,42 @@
+.c-footer__social {
+  @include no-bullet;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: $spacing-small;
+  padding-bottom: 0;
+
+  a {
+    display: block;
+    height: 1.875rem;
+  }
+
+  a:hover {
+    cursor: pointer;
+
+    path,
+    g {
+      fill: $color-brand-hover;
+    }
+  }
+
+  li {
+    margin-right: $spacing-x-small;
+  }
+
+  @media #{$medium-up} {
+    display: inline-flex;
+    float: right;
+    padding-bottom: $spacing-small;
+  }
+}
+
+.c-footer__copy {
+  font-size: $font-size-text-medium;
+  padding: $spacing-small;
+
+  @media #{$medium-up} {
+    float: left;
+  }
+}

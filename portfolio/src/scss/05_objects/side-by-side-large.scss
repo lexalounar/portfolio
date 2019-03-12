@@ -1,0 +1,29 @@
+.o-side-by-side-large {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 100%;
+
+  @media #{$medium-up} {
+    margin-top: $spacing-medium;
+  }
+
+  @media #{$large-up} {
+    flex-direction: row;
+    margin-top: $spacing-large;
+
+    > div {
+      width: 50%;
+    }
+  }
+}
+
+.o-side-by-side-large--black {
+  @extend .o-side-by-side-large;
+  background-color: $color-black-secondary;
+  margin-top: $spacing-x-small;
+
+  h2 {
+    color: $color-white;
+  }
+}

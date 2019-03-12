@@ -1,0 +1,12 @@
+.map {
+  height: 18rem;
+  width: 100%;
+
+  @media #{$medium-up} {
+    height: 25rem;
+  }
+
+  @media #{$large-up} {
+    height: 28rem;
+  }
+}

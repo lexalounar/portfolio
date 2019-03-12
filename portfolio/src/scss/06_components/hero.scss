@@ -1,0 +1,34 @@
+.c-hero {
+  background: url('/assets/photo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+  width: 100%;
+
+  @media #{$medium-up} {
+    height: 33rem;
+  }
+
+  @media #{$large-up} {
+    height: 50rem;
+  }
+}
+
+.c-hero__headline {
+  margin-top: 0;
+  padding-left: $spacing-small;
+  padding-top: 19rem;
+
+  @media #{$medium-up} {
+    color: $color-white;
+    font-size: $font-size-heading-xx-large;
+    padding-top: 8rem;
+    width: 12rem;
+  }
+
+  @media #{$large-up} {
+    font-size: $font-size-heading-xxx-large;
+    padding-top: 13rem;
+  }
+}

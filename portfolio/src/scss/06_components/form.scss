@@ -1,0 +1,25 @@
+.c-form {
+  textarea {
+    width: 100%;
+  }
+
+  label {
+    color: $color-white;
+  }
+}
+
+.c-form__flex {
+
+  @media #{$medium-up} {
+    display: flex;
+
+    label {
+      flex-grow: 1;
+      margin-right: $spacing-small;
+    }
+
+    label:last-child {
+      margin-right: 0;
+    }
+  }
+}
